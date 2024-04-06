@@ -6,10 +6,19 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
-    [Tooltip("In ms^-1")][SerializeField] float xSpeed = 4f;
-    [Tooltip("In ms^-1")][SerializeField] float ySpeed = 4f;
-    [Tooltip("In m")][SerializeField] float xRange = 20f;
-    [Tooltip("In m")][SerializeField] float yRange = 13f;
+    private float xThrow, yThrow;
+    [Tooltip("In ms^-1")][SerializeField] float xSpeed = 70f;
+    [Tooltip("In ms^-1")][SerializeField] float ySpeed = 70f;
+    [Tooltip("In m")][SerializeField] float xRange = 28f;
+    [Tooltip("In m")][SerializeField] float yRange = 21f;
+
+    [SerializeField] float positionPitchFactor = -1f;
+    [SerializeField] float controlPitchFactor = -7f;
+
+    [SerializeField] float positionYawFactor = 1f;
+    [SerializeField] float controlYawFactor = 7f;
+
+    [SerializeField] float controlRollFactor = -20f;
     void Start()
     {
         
@@ -17,6 +26,15 @@ public class Player : MonoBehaviour
     void Update()
     {
         Movement();
+        Rotation();
+    }
+
+    private void Rotation()
+    {
+        float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
+        float yaw = transform.localPosition.x * positionYawFactor + xThrow * controlYawFactor;
+        float roll = xThrow * controlRollFactor;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void Movement()
@@ -27,7 +45,7 @@ public class Player : MonoBehaviour
 
     private void MoveVertical()
     {
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffset = yThrow * ySpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;
         float clampYPos = Mathf.Clamp(rawYPos, -yRange, yRange - 5);
@@ -36,7 +54,7 @@ public class Player : MonoBehaviour
 
     private void MoveHorizontal()
     {
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffset = xThrow * xSpeed * Time.deltaTime;
 
         float rawXPos = transform.localPosition.x + xOffset;
