@@ -390,9 +390,12 @@
 "Assets/AssetPack/Standard Assets/Utility/TimedObjectDestructor.cs"
 "Assets/AssetPack/Standard Assets/Utility/WaypointCircuit.cs"
 "Assets/AssetPack/Standard Assets/Utility/WaypointProgressTracker.cs"
+"Assets/ScoreBoard.cs"
 "Assets/Scripts/CollisionHandler.cs"
+"Assets/Scripts/Enemy.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SceneLoader.cs"
+"Assets/Scripts/SelfDestructor.cs"
 -langversion:9.0
 
 /deterministic
