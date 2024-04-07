@@ -120,3 +120,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFXPrefab: {fileID: 3297680497182647521, guid: f41ddd7532b010441a4745904976ab35, type: 3}
+  parent: {fileID: 0}
+  scorePoint: 50
