@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Enemy
     - PlayerController
     - SceneLoader
+    - ScoreBoard
     - SelfDestructor
     - UnityStandardAssets.Utility.WaypointCircuit
     - UnityStandardAssets.Utility.WaypointProgressTracker
@@ -74,27 +75,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1538}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 3406}
     - Class: 114
-      Script: {instanceID: 7760}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 7780}
+      Script: {instanceID: 4566}
     - Class: 114
-      Script: {instanceID: 7808}
+      Script: {instanceID: 5230}
     - Class: 114
-      Script: {instanceID: 7860}
+      Script: {instanceID: 5792}
     - Class: 114
-      Script: {instanceID: 30106}
+      Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 46400}
+      Script: {instanceID: 6288}
+    - Class: 114
+      Script: {instanceID: 6568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -157,9 +160,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 7678}
+      Script: {instanceID: 7760}
     - Class: 114
-      Script: {instanceID: 23732}
+      Script: {instanceID: 27874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -167,6 +170,24 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 75093cc76f6ad415c8bafc7b0d2a0650
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EventSystemChecker
+  - hash:
+      serializedVersion: 2
+      Hash: ec3d40af14a9bef54cc01f7ac872a089
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: TimedObjectDestructor
+  - hash:
+      serializedVersion: 2
+      Hash: 2054f3c8495a9e003bbf95f082f1176d
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: ActivateTrigger
   - hash:
       serializedVersion: 2
       Hash: b5007673bbbdb9d12597a1d8201370f5
@@ -247,6 +268,24 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c8885bf74a21c0441acac1ad424ed185
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: DynamicShadowSettings
+  - hash:
+      serializedVersion: 2
+      Hash: a1aecf83100af6f34f887b4531a127b3
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: ButtonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 7c738a5c2d555ed83897ca81e9006448
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: PlatformSpecificContent
+  - hash:
+      serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -301,6 +340,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: 87159a6803941147f8e72c36dc87bd2c
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: TimedObjectActivator
+  - hash:
+      serializedVersion: 2
       Hash: 52db48e3be0a2b4f8b06f918fd1ebfbc
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -331,6 +376,12 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
+      Hash: d0522c3815ec7d425c99e488fa912e0a
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TouchPad
+  - hash:
+      serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -341,6 +392,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4e67d620524d0f506164a1c3b365e617
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 5a4aa2850fe11587f47e34c270c7fd22
@@ -389,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 72e1e534eea31f12c340e63b32784a58
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TiltInput
   - hash:
       serializedVersion: 2
       Hash: a1ac4c50e55874de16eee3db71aa9784
@@ -457,6 +520,12 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
+      Hash: 8b5cdda1feb91e949868227d4971f1ec
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CollisionHandler
+  - hash:
+      serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -509,6 +578,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 8c0ddad76f7c81133427dd739c8b8672
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SelfDestructor
+  - hash:
+      serializedVersion: 2
+      Hash: 397eb8a9141ff42cc3077c725ba67398
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: AutoMoveAndRotate
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
@@ -595,6 +676,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 6b6cebfeab38c6c9b95e3bd8090dd305
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScoreBoard
+  - hash:
+      serializedVersion: 2
       Hash: 0b63f6d3335e11939ce8790b904c8691
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -623,6 +710,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 48d21a53adf41166917f33fc8d4c9e9a
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: FPSCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 1b8fdf17195c7be5339b318fab6967f8
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: SimpleActivatorMenu
   - hash:
       serializedVersion: 2
       Hash: db9b308769d19e1f9e161df0392c23ca
@@ -697,6 +796,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: eb73142960eca119353e6d2b3a14dbe4
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: SimpleMouseRotator
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -715,6 +820,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 75692c1072b9ba3921d11d49652e2f64
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: bf0842d88681628b29beb00b5e2ab785
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -725,6 +836,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: da236e489d0daa043813b9a505f2ff27
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: SmoothFollow
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -743,6 +860,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 4c1b1c34ab651c1de48d1fd63cea9502
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: WaypointCircuit
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -785,6 +908,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 47055cc9ece32bdf4ab7164fe8508bc8
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: WaypointProgressTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 7c8d6d61b2bd255835807bc322310bfb
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: DragRigidbody
   - hash:
       serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
@@ -835,6 +970,12 @@ ScriptsOnlyBuild:
     className: BasicPlayableBehaviour
   - hash:
       serializedVersion: 2
+      Hash: 14c5c330612fc18794d812da7af9a4cf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Enemy
+  - hash:
+      serializedVersion: 2
       Hash: e8d390bd9ecacc453a7500b90d0c0292
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -851,6 +992,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 413c19d685b87a517bf6e341eabaad4a
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: FollowTarget
   - hash:
       serializedVersion: 2
       Hash: 6a0b5b415c00f783202fd1ae2d556cb2
@@ -883,10 +1030,22 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 34f892a3bba261247c1f79496dc718d9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ForcedReset
+  - hash:
+      serializedVersion: 2
       Hash: a89b0448af4e1cd103a77f9fec0a961f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSubmitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a91a1ab693af05646589683bb6a70432
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: ParticleSystemDestroyer
   - hash:
       serializedVersion: 2
       Hash: 5ebc58ec194dd44630b25fcc270ad4af
@@ -895,10 +1054,28 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 196e3dc218e36507db9309f16bf6e131
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: ObjectResetter
+  - hash:
+      serializedVersion: 2
+      Hash: 18ae184ae4d8aae96803493c6e420213
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.Utility
+    className: AutoMobileShaderSwitch
+  - hash:
+      serializedVersion: 2
       Hash: 4728e3d21cc2a12e391e71ec9b7eed0b
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2becc98dfd151396118960eadce094d5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AlphaButtonClickMask
   - hash:
       serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
@@ -937,6 +1114,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 5f07b86873087f6d19a7e91c6223f1a9
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: InputAxisScrollbar
+  - hash:
+      serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -953,6 +1136,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 48727bd22acbc4dfc7d6a75fc5c6d4fb
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: MobileControlRig
+  - hash:
+      serializedVersion: 2
+      Hash: df046504467590139b9748fe932bace7
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: AxisTouchButton
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
@@ -995,192 +1190,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 4e67d620524d0f506164a1c3b365e617
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 4c1b1c34ab651c1de48d1fd63cea9502
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: WaypointCircuit
-  - hash:
-      serializedVersion: 2
-      Hash: 48727bd22acbc4dfc7d6a75fc5c6d4fb
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: MobileControlRig
-  - hash:
-      serializedVersion: 2
-      Hash: 397eb8a9141ff42cc3077c725ba67398
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: AutoMoveAndRotate
-  - hash:
-      serializedVersion: 2
-      Hash: 04cca95299dcbd21009a1bb0e1fa7048
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 48d21a53adf41166917f33fc8d4c9e9a
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: FPSCounter
-  - hash:
-      serializedVersion: 2
-      Hash: 7c738a5c2d555ed83897ca81e9006448
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: PlatformSpecificContent
-  - hash:
-      serializedVersion: 2
-      Hash: 413c19d685b87a517bf6e341eabaad4a
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: FollowTarget
-  - hash:
-      serializedVersion: 2
-      Hash: 196e3dc218e36507db9309f16bf6e131
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: ObjectResetter
-  - hash:
-      serializedVersion: 2
-      Hash: c8885bf74a21c0441acac1ad424ed185
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: DynamicShadowSettings
-  - hash:
-      serializedVersion: 2
-      Hash: a1aecf83100af6f34f887b4531a127b3
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: ButtonHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 47055cc9ece32bdf4ab7164fe8508bc8
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: WaypointProgressTracker
-  - hash:
-      serializedVersion: 2
-      Hash: ec3d40af14a9bef54cc01f7ac872a089
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: TimedObjectDestructor
-  - hash:
-      serializedVersion: 2
-      Hash: 2becc98dfd151396118960eadce094d5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AlphaButtonClickMask
-  - hash:
-      serializedVersion: 2
-      Hash: da236e489d0daa043813b9a505f2ff27
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: SmoothFollow
-  - hash:
-      serializedVersion: 2
-      Hash: 7c8d6d61b2bd255835807bc322310bfb
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: DragRigidbody
-  - hash:
-      serializedVersion: 2
-      Hash: 2054f3c8495a9e003bbf95f082f1176d
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: ActivateTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: a91a1ab693af05646589683bb6a70432
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: ParticleSystemDestroyer
-  - hash:
-      serializedVersion: 2
-      Hash: 1b8fdf17195c7be5339b318fab6967f8
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: SimpleActivatorMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 87159a6803941147f8e72c36dc87bd2c
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: TimedObjectActivator
-  - hash:
-      serializedVersion: 2
-      Hash: 8b5cdda1feb91e949868227d4971f1ec
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CollisionHandler
-  - hash:
-      serializedVersion: 2
-      Hash: df046504467590139b9748fe932bace7
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: AxisTouchButton
-  - hash:
-      serializedVersion: 2
-      Hash: eb73142960eca119353e6d2b3a14dbe4
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: SimpleMouseRotator
-  - hash:
-      serializedVersion: 2
-      Hash: 34f892a3bba261247c1f79496dc718d9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ForcedReset
-  - hash:
-      serializedVersion: 2
-      Hash: d0522c3815ec7d425c99e488fa912e0a
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: TouchPad
-  - hash:
-      serializedVersion: 2
-      Hash: 72e1e534eea31f12c340e63b32784a58
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: TiltInput
-  - hash:
-      serializedVersion: 2
-      Hash: 75093cc76f6ad415c8bafc7b0d2a0650
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EventSystemChecker
-  - hash:
-      serializedVersion: 2
-      Hash: 18ae184ae4d8aae96803493c6e420213
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.Utility
-    className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 5f07b86873087f6d19a7e91c6223f1a9
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: InputAxisScrollbar
-  - hash:
-      serializedVersion: 2
-      Hash: e21541085b62a61f764013f9be494fe8
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Enemy
-  - hash:
-      serializedVersion: 2
-      Hash: 8c0ddad76f7c81133427dd739c8b8672
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SelfDestructor
   platform: 19
   scenePathNames:
   - Assets/Scenes/Splash.unity

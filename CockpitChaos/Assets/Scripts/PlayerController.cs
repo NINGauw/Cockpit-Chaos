@@ -7,7 +7,8 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour
 {
     private float xThrow, yThrow;
-    bool isControlEnable = true;
+    private bool isControlEnable = true;
+    [SerializeField]GameObject[] guns;
     [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 70f;
     [Tooltip("In ms^-1")][SerializeField] float ySpeed = 70f;
@@ -31,7 +32,33 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
         Rotation();
+        Friring();
     }
+
+    private void Friring()
+    {
+        if(CrossPlatformInputManager.GetButton("Fire")){
+            ActivateGuns();
+        }
+        else {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach(GameObject gun in guns){
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach(GameObject gun in guns){
+            gun.SetActive(false);
+        }
+    }
+
     private void Rotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
