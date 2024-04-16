@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 731917643401878508}
   - component: {fileID: 6472103292542250893}
   - component: {fileID: 3409379131373202826}
+  - component: {fileID: 7849305603605975471}
+  - component: {fileID: 7321901684668606482}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.91068727, z: 0, w: 0.41309646}
   m_LocalPosition: {x: 277.7, y: 33.2, z: 419.9}
-  m_LocalScale: {x: 1.4928013, y: 1.4928014, z: 1.4928013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -122,3 +124,44 @@ MonoBehaviour:
   deathFXPrefab: {fileID: 3297680497182647521, guid: f41ddd7532b010441a4745904976ab35, type: 3}
   parent: {fileID: 0}
   scorePoint: 100
+  healthPoint: 10
+--- !u!320 &7849305603605975471
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5248723539733168353}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 1176cb66b7d547d42b323234ed402da4, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 6562147687725466550, guid: 1176cb66b7d547d42b323234ed402da4, type: 2}
+    value: {fileID: 7321901684668606482}
+  m_ExposedReferences:
+    m_References: []
+--- !u!95 &7321901684668606482
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5248723539733168353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
