@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122443df9d789e74eb431efebb5df83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guns: []
   xSpeed: 70
   ySpeed: 70
   xRange: 28

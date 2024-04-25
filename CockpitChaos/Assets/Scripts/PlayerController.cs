@@ -38,27 +38,20 @@ public class PlayerController : MonoBehaviour
     private void Friring()
     {
         if(CrossPlatformInputManager.GetButton("Fire")){
-            ActivateGuns();
+            SetActivateGuns(true);
         }
         else {
-            DeactivateGuns();
+            SetActivateGuns(false);
         }
     }
 
-    private void ActivateGuns()
+    private void SetActivateGuns(bool isActive)
     {
         foreach(GameObject gun in guns){
-            gun.SetActive(true);
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
         }
     }
-
-    private void DeactivateGuns()
-    {
-        foreach(GameObject gun in guns){
-            gun.SetActive(false);
-        }
-    }
-
     private void Rotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
