@@ -1,16 +1,28 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Boss
     - CollisionHandler
     - Enemy
     - PlayerController
     - SceneLoader
     - ScoreBoard
     - SelfDestructor
-    - UnityStandardAssets.Utility.WaypointCircuit
     - UnityStandardAssets.Utility.WaypointProgressTracker
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
+    - TimelineProjectSettings
+    - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetViewModel
+    - UnityEditor.Timeline.TimelineWindow
+    - UnityEditor.Timeline.TimelineWindowTimeControl
+    Unity.Timeline.dll:
+    - UnityEngine.Timeline.AnimationTrack
+    - UnityEngine.Timeline.ControlPlayableAsset
+    - UnityEngine.Timeline.ControlTrack
+    - UnityEngine.Timeline.TimelineAsset
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -28,15 +40,79 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   serializedClasses:
-    Assembly-CSharp:
-    - UnityStandardAssets.Utility.WaypointCircuit/WaypointList
+    Unity.Timeline:
+    - UnityEngine.Timeline.MarkerList
+    - UnityEngine.Timeline.TimelineAsset/EditorSettings
+    - UnityEngine.Timeline.TimelineClip
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.ExposedReference`1[UnityEngine.GameObject]
     UnityEngine.UI:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
   methodsToPreserve: []
   sceneClasses:
+    Assets/Scenes/End.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1542}
+    - Class: 114
+      Script: {instanceID: 1544}
+    - Class: 114
+      Script: {instanceID: 2594}
+    - Class: 114
+      Script: {instanceID: 2804}
+    - Class: 114
+      Script: {instanceID: 6032}
+    - Class: 114
+      Script: {instanceID: 7760}
+    - Class: 114
+      Script: {instanceID: 144464}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Level1.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -62,6 +138,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -69,6 +147,8 @@ ScriptsOnlyBuild:
     - Class: 83
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -81,26 +161,34 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2594}
     - Class: 114
+      Script: {instanceID: 2614}
+    - Class: 114
       Script: {instanceID: 2804}
     - Class: 114
       Script: {instanceID: 3406}
     - Class: 114
+      Script: {instanceID: 3534}
+    - Class: 114
       Script: {instanceID: 3870}
+    - Class: 114
+      Script: {instanceID: 4036}
     - Class: 114
       Script: {instanceID: 4566}
     - Class: 114
       Script: {instanceID: 5230}
     - Class: 114
-      Script: {instanceID: 5792}
-    - Class: 114
       Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 6288}
-    - Class: 114
       Script: {instanceID: 6568}
+    - Class: 114
+      Script: {instanceID: 7060}
+    - Class: 114
+      Script: {instanceID: 144382}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 154
       Script: {instanceID: 0}
@@ -123,6 +211,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    - Class: 320
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
@@ -162,7 +252,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7760}
     - Class: 114
-      Script: {instanceID: 27874}
+      Script: {instanceID: 144464}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -970,7 +1060,7 @@ ScriptsOnlyBuild:
     className: BasicPlayableBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 14c5c330612fc18794d812da7af9a4cf
+      Hash: f01346ebc014711633556eabb154327b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Enemy
@@ -1190,8 +1280,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 105701cf497efdd97d2e175f66958bb7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Boss
   platform: 19
   scenePathNames:
   - Assets/Scenes/Splash.unity
   - Assets/Scenes/Level1.unity
+  - Assets/Scenes/End.unity
   playerPath: C:/Users/Lenovo/Desktop/Cockpit/CockpitChaos.exe

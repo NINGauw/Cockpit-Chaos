@@ -391,6 +391,7 @@
 "Assets/AssetPack/Standard Assets/Utility/WaypointCircuit.cs"
 "Assets/AssetPack/Standard Assets/Utility/WaypointProgressTracker.cs"
 "Assets/ScoreBoard.cs"
+"Assets/Scripts/Boss.cs"
 "Assets/Scripts/CollisionHandler.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/PlayerController.cs"
